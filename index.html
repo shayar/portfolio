@@ -79,7 +79,7 @@
 
   <footer>
     <div class="footer-container">
-      <p>&copy; 2024 Shayar Shrestha. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Shayar Shrestha. All rights reserved.</p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/shayarshrestha/" target="_blank">LinkedIn</a>
         <a href="https://github.com/shayar" target="_blank">GitHub</a>
@@ -87,5 +87,9 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
