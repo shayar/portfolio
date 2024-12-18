@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const blogContainer = document.getElementById('blog-posts');
-  const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=YOUR_MEDIUM_FEED_URL';
+  const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ss70';
 
   fetch(rssUrl)
     .then(response => response.json())
